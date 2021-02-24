@@ -110,12 +110,9 @@ We can specify the **scheme** as being a DOI with this identifiers.org Registry 
 
 Looking at the available fields from [schema:PropertyValue](https://schema.org/PropertyValue), we can map our identifier fields as such:
 
-- `schema:value` as the identifier value `10.5066/F7VX0DMQ`
+- `schema:value` as the identifier value `doi:10.5066/F7VX0DMQ`
 - `schema:propertyID` is the registry.identifiers.org URI for the identifier scheme `https://registry.identifiers.org/registry/doi`,
 - `schema:url` is the resolvable url for that identifier `https://doi.org/10.5066/F7VX0DMQ`.
-
-**Q: Where should the prefix go?**  
-**A:** There is no ideal property for the prefix. But, we may include it as part of the `schema:value`.
 
 **Q: Why include `doi:` as part of the value? Doesn't the URL `https://doi.org/10.5066/F7VX0DMQ` acheive the same result?**  
 **A:** While the actual value of the DOI is `10.5066/F7VX0DMQ`, we felt that this representation helps schema.org publishers specify an identifier value that is familiar to the research community. For example, in most citation styles such as APA, the DOI 10.5066/F7VX0DMQ is cited as `doi:10.5066/F7VX0DMQ`. Also, there can be many proper URLs for a specific identifier:
